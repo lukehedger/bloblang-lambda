@@ -1,0 +1,8 @@
+pipeline:
+  processors:
+  - mapping: |
+      root = {}
+      root.body = {}
+      root.body.hello = this.name
+      root.body = root.body.format_json().string()
+      root.statusCode = 200
