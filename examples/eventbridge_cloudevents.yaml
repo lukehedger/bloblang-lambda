@@ -1,0 +1,12 @@
+pipeline:
+  processors:
+  - mapping: |
+      root = {}
+      root.data = this.detail
+      root.datacontenttype = "application/json"
+      root.id = ulid()
+      root.source = "/ecorp/%s".format(this.source)
+      root.specversion = "1.0"
+      root.subject = this."detail-type"
+      root.time = this.time
+      root.type = "com.ecorp.%s".format(this."detail-type")

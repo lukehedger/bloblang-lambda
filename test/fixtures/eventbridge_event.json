@@ -1,0 +1,14 @@
+{
+  "version": "0",
+  "id": "af653d6e-efa2-4064-9449-d1f0b72b6c35",
+  "detail-type": "order.created",
+  "source": "orders",
+  "account": "arn",
+  "time": "2023-12-22T18:43:48Z",
+  "region": "region",
+  "resources": ["arn"],
+  "detail": {
+    "orderId": "123",
+    "state": "created"
+  }
+}
